@@ -35,6 +35,7 @@ task generate {
     group 'HolidayJp'
     description 'Generate \'Holidays.java\' from datasheet'
     doLast {
-        GeneratorTask.run()
+        def rootDir = rootProject.projectDir.absolutePath
+        GeneratorTask.run(rootDir)
     }
 }
