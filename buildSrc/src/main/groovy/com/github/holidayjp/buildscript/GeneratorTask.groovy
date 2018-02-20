@@ -33,7 +33,9 @@ class GeneratorTask {
 
             for (holiday in holidays) {
                 def ymd = sdf.format(holiday.date)
-                writer.println("        HOLIDAYS.put(\"$ymd\", new Holiday());")
+                writer.write("        HOLIDAYS.put(\"$ymd\", new Holiday(")
+                writer.write("\"$ymd\", \"$holiday.week\", \"$holiday.week_en\", \"$holiday.name\",\"$holiday.name_en\"")
+                writer.write("));\n")
             }
 
             writer.println("    }")
