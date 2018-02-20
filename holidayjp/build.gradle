@@ -1,5 +1,6 @@
 apply plugin: 'java-library'
 
 dependencies {
+    compile "com.google.code.findbugs:jsr305:${rootProject.ext.findbugsVersion}"
     testCompile 'junit:junit:4.12'
 }
