@@ -1,1 +1,4 @@
-include ':holidayjp', ':holidayjp-jdk8', ':holidayjp-threetenabp'
+include ':holidayjp-jdk8'
+include ':holidayjp-threetenabp'
+include ':holidayjp-joda'
+include ':holidayjp'

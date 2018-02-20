@@ -25,3 +25,16 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+
+// Define gradle `generate` custom task
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+import com.github.holidayjp.buildscript.GeneratorTask
+
+task generate {
+    group 'HolidayJp'
+    description 'Generate \'Holidays.java\' from datasheet'
+    doLast {
+        GeneratorTask.run()
+    }
+}
