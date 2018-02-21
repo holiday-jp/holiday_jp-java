@@ -1,5 +1,9 @@
 apply plugin: 'java-library'
+apply plugin: 'kotlin'
 
 dependencies {
-    testCompile 'junit:junit:4.12'
+    compile "com.google.code.findbugs:jsr305:${rootProject.ext.findbugsVersion}"
+    testCompile "junit:junit:${rootProject.ext.junitVersion}"
+    testCompile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${rootProject.ext.kotlinVersion}"
+    testCompile "org.jetbrains.kotlin:kotlin-test:${rootProject.ext.kotlinVersion}"
 }

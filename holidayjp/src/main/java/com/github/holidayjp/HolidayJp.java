@@ -10,8 +10,12 @@ import javax.annotation.Nonnull;
  * Created by pine on 2018/02/21.
  */
 
-public final class HolidayJp {
-    private HolidayJp() {
+public class HolidayJp {
+    protected HolidayJp() {
+    }
+
+    public static boolean isHoliday(@Nonnull String ymd) {
+        return Holidays.HOLIDAYS.containsKey(ymd);
     }
 
     public static boolean isHoliday(@Nonnull Date date) {
