@@ -1,6 +1,9 @@
 apply plugin: 'java-library'
 apply plugin: 'kotlin'
 
+sourceCompatibility = JavaVersion.VERSION_1_7
+targetCompatibility = JavaVersion.VERSION_1_7
+
 dependencies {
     compile "com.google.code.findbugs:jsr305:${rootProject.ext.findbugsVersion}"
     testCompile "junit:junit:${rootProject.ext.junitVersion}"

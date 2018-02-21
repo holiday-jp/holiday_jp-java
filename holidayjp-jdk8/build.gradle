@@ -2,6 +2,7 @@ apply plugin: 'java-library'
 apply plugin: 'kotlin'
 
 dependencies {
+    compile project(":holidayjp")
     compile "com.google.code.findbugs:jsr305:${rootProject.ext.findbugsVersion}"
     testCompile "junit:junit:${rootProject.ext.junitVersion}"
     testCompile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${rootProject.ext.kotlinVersion}"
