@@ -1,7 +1,10 @@
 package com.github.holidayjp;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
+import java.util.TimeZone;
 
 import javax.annotation.Nonnull;
 
@@ -11,6 +14,8 @@ import javax.annotation.Nonnull;
  */
 
 public class HolidayJp {
+    static final protected SimpleDateFormat FORMAT = new SimpleDateFormat("yyyy-MM-dd");
+
     protected HolidayJp() {
     }
 
@@ -18,11 +23,23 @@ public class HolidayJp {
         return Holidays.HOLIDAYS.containsKey(ymd);
     }
 
+    public static boolean isHoliday(int year, int month, int mday) {
+        return isHoliday(String.format(Locale.US, "%04d-%02d-%02d", year, month, mday));
+    }
+
     public static boolean isHoliday(@Nonnull Date date) {
-        throw new UnsupportedOperationException();
+        return isHoliday(FORMAT.format(date));
+    }
+
+    public static boolean isHoliday(@Nonnull Date date, @Nonnull TimeZone timeZone) {
+        synchronized (FORMAT) {
+            FORMAT.setTimeZone(timeZone);
+            return isHoliday(FORMAT.format(date));
+        }
     }
 
     public static boolean isHoliday(@Nonnull Calendar calendar) {
-        throw new UnsupportedOperationException();
+        return isHoliday(calendar.getTime(), calendar.getTimeZone());
     }
+
 }

@@ -1,8 +1,7 @@
 package com.github.holidayjp.jdk8
 
 import org.junit.Test
-import java.time.LocalDate
-import java.time.LocalDateTime
+import java.time.*
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
@@ -46,5 +45,78 @@ class HolidayJpTest {
         assertFalse(HolidayJp.isHoliday(date5))
     }
 
+    @Test
+    fun testIsHolidayZonedDateTime() {
+        // UTC
+        run {
+            val zoneId = ZoneId.of("UTC")
 
+            val date1 = ZonedDateTime.of(2011, 9, 18, 23, 59, 59, 999999999, zoneId)
+            val date2 = ZonedDateTime.of(2011, 9, 19, 0, 0, 0, 0, zoneId)
+            val date3 = ZonedDateTime.of(2011, 9, 19, 0, 0, 0, 1, zoneId)
+            val date4 = ZonedDateTime.of(2011, 9, 19, 23, 59, 59, 999999999, zoneId)
+            val date5 = ZonedDateTime.of(2011, 9, 20, 0, 0, 0, 0, zoneId)
+
+            assertFalse(HolidayJp.isHoliday(date1))
+            assertTrue(HolidayJp.isHoliday(date2))
+            assertTrue(HolidayJp.isHoliday(date3))
+            assertTrue(HolidayJp.isHoliday(date4))
+            assertFalse(HolidayJp.isHoliday(date5))
+        }
+
+        // Asia/Tokyo
+        run {
+            val zoneId = ZoneId.of("Asia/Tokyo")
+
+            val date1 = ZonedDateTime.of(2011, 9, 18, 23, 59, 59, 999999999, zoneId)
+            val date2 = ZonedDateTime.of(2011, 9, 19, 0, 0, 0, 0, zoneId)
+            val date3 = ZonedDateTime.of(2011, 9, 19, 0, 0, 0, 1, zoneId)
+            val date4 = ZonedDateTime.of(2011, 9, 19, 23, 59, 59, 999999999, zoneId)
+            val date5 = ZonedDateTime.of(2011, 9, 20, 0, 0, 0, 0, zoneId)
+
+            assertFalse(HolidayJp.isHoliday(date1))
+            assertTrue(HolidayJp.isHoliday(date2))
+            assertTrue(HolidayJp.isHoliday(date3))
+            assertTrue(HolidayJp.isHoliday(date4))
+            assertFalse(HolidayJp.isHoliday(date5))
+        }
+    }
+
+    @Test
+    fun testIsHolidayOffsetDateTime() {
+        // UTC
+        run {
+            val zoneOffset = ZoneOffset.UTC
+
+            val date1 = OffsetDateTime.of(2011, 9, 18, 23, 59, 59, 999999999, zoneOffset)
+            val date2 = OffsetDateTime.of(2011, 9, 19, 0, 0, 0, 0, zoneOffset)
+            val date3 = OffsetDateTime.of(2011, 9, 19, 0, 0, 0, 1, zoneOffset)
+            val date4 = OffsetDateTime.of(2011, 9, 19, 23, 59, 59, 999999999, zoneOffset)
+            val date5 = OffsetDateTime.of(2011, 9, 20, 0, 0, 0, 0, zoneOffset)
+
+            assertFalse(HolidayJp.isHoliday(date1))
+            assertTrue(HolidayJp.isHoliday(date2))
+            assertTrue(HolidayJp.isHoliday(date3))
+            assertTrue(HolidayJp.isHoliday(date4))
+            assertFalse(HolidayJp.isHoliday(date5))
+        }
+
+        // Asia/Tokyo
+        run {
+            val zoneOffset = ZoneOffset.ofHours(9)
+
+            val date1 = OffsetDateTime.of(2011, 9, 18, 23, 59, 59, 999999999, zoneOffset)
+            val date2 = OffsetDateTime.of(2011, 9, 19, 0, 0, 0, 0, zoneOffset)
+            val date3 = OffsetDateTime.of(2011, 9, 19, 0, 0, 0, 1, zoneOffset)
+            val date4 = OffsetDateTime.of(2011, 9, 19, 23, 59, 59, 999999999, zoneOffset)
+            val date5 = OffsetDateTime.of(2011, 9, 20, 0, 0, 0, 0, zoneOffset)
+
+            assertFalse(HolidayJp.isHoliday(date1))
+            assertTrue(HolidayJp.isHoliday(date2))
+            assertTrue(HolidayJp.isHoliday(date3))
+            assertTrue(HolidayJp.isHoliday(date4))
+            assertFalse(HolidayJp.isHoliday(date5))
+        }
+
+    }
 }
