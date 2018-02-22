@@ -14,7 +14,8 @@ import javax.annotation.Nonnull;
  */
 
 public class HolidayJp {
-    static final protected SimpleDateFormat FORMAT = new SimpleDateFormat("yyyy-MM-dd");
+    static final private SimpleDateFormat FORMAT = new SimpleDateFormat("yyyy-MM-dd");
+    static final private SimpleDateFormat LOCAL_FORMAT = new SimpleDateFormat("yyyy-MM-dd");
 
     protected HolidayJp() {
     }
@@ -28,7 +29,7 @@ public class HolidayJp {
     }
 
     public static boolean isHoliday(@Nonnull Date date) {
-        return isHoliday(FORMAT.format(date));
+        return isHoliday(LOCAL_FORMAT.format(date));
     }
 
     public static boolean isHoliday(@Nonnull Date date, @Nonnull TimeZone timeZone) {

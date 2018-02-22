@@ -1,5 +1,28 @@
-apply plugin: 'java-library'
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
 
 dependencies {
-    testCompile 'junit:junit:4.12'
+    api project(":holidayjp")
+    api "com.google.code.findbugs:jsr305:${rootProject.ext.findbugsVersion}"
+    api 'com.jakewharton.threetenabp:threetenabp:1.0.5'
+    androidTestImplementation "junit:junit:${rootProject.ext.junitVersion}"
+    androidTestImplementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${rootProject.ext.kotlinVersion}"
+    androidTestImplementation "org.jetbrains.kotlin:kotlin-test:${rootProject.ext.kotlinVersion}"
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+
 }
