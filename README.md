@@ -15,24 +15,34 @@ repositories {
 
 dependencies {
     compile 'com.github.holidayjp:holidayjp:0.1.0'
-    
-    // for Java 8 Date and Time API
-    compile 'com.github.holidayjp:holidayjp-jdk8:0.1.0'
-
-    // for Joda-Time
-    // http://www.joda.org/joda-time/
-    compile 'com.github.holidayjp:holidayjp-joda:0.1.0'
-
-    // for Android ThreeTenABP
-    // https://github.com/JakeWharton/ThreeTenABP
-    compile 'com.github.holidayjp:holidayjp-threetenabp:0.1.0'
 }
+```
+
+## Supported libraries
+### Java 8 Date and Time API
+`LocalDate`, `LocalDateTime`, `ZonedDateTime` and `OffsetDateTime` classes are supported.
+
+```groovy
+compile 'com.github.holidayjp:holidayjp-jdk8:0.1.0'
+```
+
+### [Joda-Time](http://www.joda.org/joda-time/)
+`LocalDate`, `LocalDateTime` and `DateTime` classes are supported.
+
+```groovy
+compile 'com.github.holidayjp:holidayjp-joda:0.1.0'
+```
+
+### [ThreeTenABP](https://github.com/JakeWharton/ThreeTenABP)
+ThreeTenABP is polyfill of Java 8 Date and Time API. `LocalDate`, `LocalDateTime`, `ZonedDateTime` and `OffsetDateTime` classes are supported.
+
+```groovy
+compile 'com.github.holidayjp:holidayjp-threetenabp:0.1.0'
 ```
 
 ## Example
 
-```java
-```
+TODO
 
 ## For developer
 ### Development
