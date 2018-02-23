@@ -51,6 +51,8 @@ $ ./gradlew check connectedCheck
 ### Publish to jcenter
 
 ```
+$ export BINTRAY_USER=username
+$ export BINTRAY_API_KEY=apiKey
 $ ./gradlew clean assemble bintrayUpload
 ```
 
