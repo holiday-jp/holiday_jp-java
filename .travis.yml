@@ -1,0 +1,31 @@
+language: android
+jdk:
+  - oraclejdk8
+addons:
+  apt:
+    packages:
+      - lynx
+env:
+  - GRADLE_OPTS="-Xmx512m -XX:MaxPermSize=512m"
+
+android:
+  components:
+    - tools
+    - platform-tools
+    - build-tools-27.0.3
+    - android-22
+    - android-27
+    - sys-img-armeabi-v7a-android-22
+
+before_script:
+  - mkdir -p $ANDROID_HOME/licenses
+  - echo 8933bad161af4178b1185d1a37fbf41ea5269c55 >> $ANDROID_HOME/licenses/android-sdk-license
+  - echo d56f5187479451eabf01fb78af6dfcb131a6481e >> $ANDROID_HOME/licenses/android-sdk-license
+  - echo no | android create avd --force -n test -t android-22 --abi armeabi-v7a
+  - emulator -avd test -no-audio -no-window &
+  - android-wait-for-emulator
+  - adb shell input keyevent 82 &
+
+script:
+  - ./gradlew generate
+  - ./gradlew clean check connectedCheck
