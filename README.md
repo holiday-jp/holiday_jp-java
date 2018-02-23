@@ -31,7 +31,7 @@ dependencies {
 
 ## Example
 
-```swift
+```java
 ```
 
 ## For developer
@@ -51,6 +51,7 @@ $ ./gradlew check connectedCheck
 ### Publish to jcenter
 
 ```
+$ ./gradlew clean assemble bintrayUpload
 ```
 
 ## See also
