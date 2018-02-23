@@ -17,7 +17,7 @@ android {
 }
 
 dependencies {
-    api project(":holidayjp")
+    api project(':holidayjp')
     api "com.google.code.findbugs:jsr305:${rootProject.ext.findbugsVersion}"
     api 'com.jakewharton.threetenabp:threetenabp:1.0.5'
     androidTestImplementation "junit:junit:${rootProject.ext.junitVersion}"

@@ -6,7 +6,7 @@ import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
 /**
- * Test for Holiday
+ * Test for HolidayJp
  * Created by pine on 2018/02/21.
  */
 
