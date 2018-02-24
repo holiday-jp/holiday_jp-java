@@ -36,7 +36,7 @@ compile 'com.github.holidayjp:holidayjp-joda:0.1.0'
 ```
 
 ### [ThreeTenABP](https://github.com/JakeWharton/ThreeTenABP)
-ThreeTenABP is polyfill of Java 8 Date and Time API. `LocalDate`, `LocalDateTime`, `ZonedDateTime` and `OffsetDateTime` classes are supported.
+ThreeTenABP is polyfill of Java 8 Date and Time API for Android. `LocalDate`, `LocalDateTime`, `ZonedDateTime` and `OffsetDateTime` classes are supported.
 
 ```groovy
 compile 'com.github.holidayjp:holidayjp-threetenabp:0.1.0'
