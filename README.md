@@ -110,7 +110,41 @@ if (HolidayJp.isHoliday(today)) {
 }
 ```
 
-### `class Holiday`
+#### `boolean HolidayJp.isHoliday(@Nonnull Date date, @Nonnull TimeZone timeZone)`
+
+Judge whether it is a holiday in Japan. If a date is holiday, return `true`.
+`timeZone` parameter is used to judge holiday.
+
+```java
+import java.util.*;
+import com.github.holidayjp.HolidayJp;
+
+Calendar calendar = Calendar.getInstance();
+TimeZone timeZone = TimeZone.getTimeZone("UTC");
+calendar.setTimeZone(timeZone);
+
+Date today = calendar.getTime();
+if (HolidayJp.isHoliday(today, timeZone)) {
+    System.out.println("Today is a holiday!");
+}
+```
+
+#### `boolean HolidayJp.isHoliday(@Nonnull Calendar calendar)`
+
+Judge whether it is a holiday in Japan. If a date is holiday, return `true`.
+The time zone setting of `calendar` is used to judge holiday.
+
+```java
+import java.util.*;
+import com.github.holidayjp.HolidayJp;
+
+Calendar calendar = Calendar.getInstance();
+if (HolidayJp.isHoliday(calendar)) {
+    System.out.println("Today is a holiday!");
+}
+```
+
+### `class com.github.holidayjp.Holiday`
 `Holiday` class represents holiday data.
 
 ```java
@@ -129,6 +163,68 @@ System.out.println(holiday.getWeek());   // "火"
 System.out.println(holiday.getWeekEn()); // "Tuesday"
 System.out.println(holiday.getName());   // "秋分の日"
 System.out.println(holiday.getNameEn()); // "Autumnal Equinox Day"
+```
+
+### `class com.github.holidayjp.jdk8.HolidayJp`
+This is utility class for Java 8 or later.
+
+
+#### `boolean HolidayJp.isHoliday(@Nonnull LocalDate)`
+#### `boolean HolidayJp.isHoliday(@Nonnull LocalDateTime date)`
+#### `boolean HolidayJp.isHoliday(@Nonnull ZonedDateTime date)`
+#### `boolean HolidayJp isHoliday(@Nonnull OffsetDateTime date)`
+
+Judge whether it is a holiday in Japan. If a date is holiday, return `true`.
+
+```java
+import java.time.*;
+import com.github.holidayjp.jdk8.HolidayJp;
+
+LocalDate today = LocalDate.now();
+if (HolidayJp.isHoliday(today)) {
+    System.out.println("Today is a holiday!");
+}
+```
+
+### `class com.github.holidayjp.jda.HolidayJp`
+This is utility class for [Joda-Time](http://www.joda.org/joda-time/).
+
+
+#### `boolean HolidayJp.isHoliday(@Nonnull LocalDate)`
+#### `boolean HolidayJp.isHoliday(@Nonnull LocalDateTime date)`
+#### `boolean HolidayJp.isHoliday(@Nonnull DateTime date)`
+
+Judge whether it is a holiday in Japan. If a date is holiday, return `true`.
+
+```java
+import org.joda.time.*;
+import com.github.holidayjp.joda.HolidayJp;
+
+LocalDate today = LocalDate.now();
+if (HolidayJp.isHoliday(today)) {
+    System.out.println("Today is a holiday!");
+}
+```
+
+### `class com.github.holidayjp.threetenabp.HolidayJp`
+This is utility class for [ThreeTenABP](https://github.com/JakeWharton/ThreeTenABP).
+
+
+#### `boolean HolidayJp.isHoliday(@Nonnull LocalDate)`
+#### `boolean HolidayJp.isHoliday(@Nonnull LocalDateTime date)`
+#### `boolean HolidayJp.isHoliday(@Nonnull ZonedDateTime date)`
+#### `boolean HolidayJp isHoliday(@Nonnull OffsetDateTime date)`
+
+Judge whether it is a holiday in Japan. If a date is holiday, return `true`.
+
+```java
+import org.threeten.bp.*;
+import com.github.holidayjp.threetenabp.HolidayJp;
+
+LocalDate today = LocalDate.now();
+if (HolidayJp.isHoliday(today)) {
+    System.out.println("Today is a holiday!");
+}
 ```
 
 ## For developer
