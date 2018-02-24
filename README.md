@@ -44,7 +44,15 @@ compile 'com.github.holidayjp:holidayjp-threetenabp:0.1.0'
 
 ## Example
 
-TODO
+```java
+import com.github.holidayjp.jdk8.HolidayJp;
+
+LocalDate today = LocalDate.now();
+if (HolidayJp.isHoliday(today)) {
+    System.out.println("Today is a holiday!");
+}
+```
+
 
 ## For developer
 ### Development
