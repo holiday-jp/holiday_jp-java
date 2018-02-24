@@ -1,0 +1,70 @@
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
+
+def siteUrl = 'https://github.com/holiday-jp/holiday_jp-java'
+def gitUrl = 'https://github.com/holiday-jp/holiday_jp-java.git'
+def issueTrackerUrl = 'https://github.com/holiday-jp/holiday_jp-java/issues'
+def description = 'Japanese holiday.'
+
+bintray {
+    user = project.hasProperty('bintrayUser') ? project.property('bintrayUser') : System.getenv('BINTRAY_USER')
+    key = project.hasProperty('bintrayApiKey') ? project.property('bintrayApiKey') : System.getenv('BINTRAY_API_KEY')
+
+    configurations = ['archives']
+    dryRun = false
+    publish = true
+
+    pkg {
+        userOrg = 'pinemz'
+        repo = 'maven'
+        name = project.name
+        desc = description
+        licenses = ['MIT']
+        vcsUrl = siteUrl
+        issueTrackerUrl = issueTrackerUrl
+        publicDownloadNumbers = true
+
+        version {
+            name = project.version
+            vcsTag = project.version
+        }
+    }
+}
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                name project.name
+                url siteUrl
+                licenses {
+                    license {
+                        name 'MIT License'
+                        url 'http://opensource.org/licenses/mit-license.php'
+                    }
+                }
+                developers {
+                    developer {
+                        id 'pinemz'
+                        name 'Pine Mizune'
+                        email 'pinemz@gmail.com'
+                    }
+                }
+                scm {
+                    connection gitUrl
+                    developerConnection gitUrl
+                    url siteUrl
+                }
+            }
+        }
+    }
+}
+
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+
+artifacts {
+    archives sourcesJar
+}
