@@ -14,8 +14,8 @@ import javax.annotation.Nonnull;
  */
 
 public class HolidayJp {
-    static final private SimpleDateFormat FORMAT = new SimpleDateFormat("yyyy-MM-dd");
-    static final private SimpleDateFormat LOCAL_FORMAT = new SimpleDateFormat("yyyy-MM-dd");
+    static final private SimpleDateFormat FORMAT = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
+    static final private SimpleDateFormat LOCAL_FORMAT = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
 
     protected HolidayJp() {
     }
