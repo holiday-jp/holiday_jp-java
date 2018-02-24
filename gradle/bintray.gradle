@@ -1,6 +1,5 @@
 apply plugin: 'com.jfrog.bintray'
-apply plugin: 'maven-publish'
-apply plugin: 'signing'
+apply plugin: 'com.github.dcendents.android-maven'
 
 bintray {
     user = project.hasProperty('bintrayUser') ? project.property('bintrayUser') : System.getenv('BINTRAY_USER')
@@ -16,12 +15,41 @@ bintray {
         name = project.name
         desc = project.description
         licenses = ['MIT']
-        vcsUrl = rootProject.ext.siteUrl
+        vcsUrl = rootProject.ext.gitUrl
         publicDownloadNumbers = true
 
         version {
             name = project.version
             vcsTag = project.version
+        }
+    }
+}
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                name project.name
+                url rootProject.ext.siteUrl
+                licenses {
+                    license {
+                        name 'MIT License'
+                        url 'http://opensource.org/licenses/mit-license.php'
+                    }
+                }
+                developers {
+                    developer {
+                        id 'pinemz'
+                        name 'Pine Mizune'
+                        email 'pinemz@gmail.com'
+                    }
+                }
+                scm {
+                    connection rootProject.ext.gitUrl
+                    developerConnection rootProject.ext.gitUrl
+                    url rootProject.ext.siteUrl
+                }
+            }
         }
     }
 }
@@ -36,15 +64,7 @@ task sourcesJar(type: Jar) {
     classifier = 'sources'
 }
 
-publishing {
-    publications {
-        MyPublication(MavenPublication) {
-            from components.java
-            artifact sourcesJar
-            artifact javadocJar
-            groupId project.group
-            artifactId project.name
-            version project.version
-        }
-    }
+artifacts {
+    archives javadocJar
+    archives sourcesJar
 }
