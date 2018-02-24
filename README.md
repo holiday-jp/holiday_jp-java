@@ -39,10 +39,22 @@ compile 'com.github.holidayjp:holidayjp-joda:0.1.0'
 ThreeTenABP is polyfill of Java 8 Date and Time API for Android. `LocalDate`, `LocalDateTime`, `ZonedDateTime` and `OffsetDateTime` classes are supported.
 
 ```groovy
-compile 'com.github.holidayjp:holidayjp-threetenabp:0.1.0'
+implementation 'com.github.holidayjp:holidayjp-threetenabp:0.1.0'
 ```
 
 ## Example
+### Java 7
+
+```java
+import java.util.*;
+import com.github.holidayjp.HolidayJp;
+
+Date today = new Date();
+if (HolidayJp.isHoliday(today)) {
+    System.out.println("Today is a holiday!");
+}
+```
+
 ### Java 8
 
 ```java
@@ -59,17 +71,16 @@ if (HolidayJp.isHoliday(today)) {
 ### `class com.github.holidayjp.HolidayJp`
 This is utility class for Java 7 or earlier.
 
-#### `boolean HolidayJp.isHoliday(@Nonnull Date date)`
+#### `boolean HolidayJp.isHoliday(@Nonnull String ymd)`
 
 Judge whether it is a holiday in Japan. If a date is holiday, return `true`.
+`ymd` parameter should be formatted `YYYY-MM-DD`.
 
 ```java
-import java.util.*;
 import com.github.holidayjp.HolidayJp;
 
-Date today = new Date();
-if (HolidayJp.isHoliday(today)) {
-    System.out.println("Today is a holiday!");
+if (HolidayJp.isHoliday("2018-12-01")) {
+    System.out.println("2018/12/01 is a holiday!");
 }
 ```
 
@@ -82,6 +93,20 @@ import com.github.holidayjp.HolidayJp;
 
 if (HolidayJp.isHoliday(2018, 12, 1)) {
     System.out.println("2018/12/01 is a holiday!");
+}
+```
+
+#### `boolean HolidayJp.isHoliday(@Nonnull Date date)`
+
+Judge whether it is a holiday in Japan. If a date is holiday, return `true`.
+
+```java
+import java.util.*;
+import com.github.holidayjp.HolidayJp;
+
+Date today = new Date();
+if (HolidayJp.isHoliday(today)) {
+    System.out.println("Today is a holiday!");
 }
 ```
 
