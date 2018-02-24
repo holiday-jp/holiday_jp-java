@@ -1,10 +1,6 @@
-apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
-
-def siteUrl = 'https://github.com/holiday-jp/holiday_jp-java'
-def gitUrl = 'https://github.com/holiday-jp/holiday_jp-java.git'
-def issueTrackerUrl = 'https://github.com/holiday-jp/holiday_jp-java/issues'
-def description = 'Japanese holiday.'
+apply plugin: 'maven-publish'
+apply plugin: 'signing'
 
 bintray {
     user = project.hasProperty('bintrayUser') ? project.property('bintrayUser') : System.getenv('BINTRAY_USER')
@@ -15,13 +11,12 @@ bintray {
     publish = true
 
     pkg {
-        userOrg = 'pinemz'
+        userOrg = rootProject.ext.userOrg
         repo = 'maven'
         name = project.name
-        desc = description
+        desc = project.description
         licenses = ['MIT']
-        vcsUrl = siteUrl
-        issueTrackerUrl = issueTrackerUrl
+        vcsUrl = rootProject.ext.siteUrl
         publicDownloadNumbers = true
 
         version {
@@ -31,40 +26,25 @@ bintray {
     }
 }
 
-install {
-    repositories.mavenInstaller {
-        pom {
-            project {
-                name project.name
-                url siteUrl
-                licenses {
-                    license {
-                        name 'MIT License'
-                        url 'http://opensource.org/licenses/mit-license.php'
-                    }
-                }
-                developers {
-                    developer {
-                        id 'pinemz'
-                        name 'Pine Mizune'
-                        email 'pinemz@gmail.com'
-                    }
-                }
-                scm {
-                    connection gitUrl
-                    developerConnection gitUrl
-                    url siteUrl
-                }
-            }
-        }
-    }
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from 'build/docs/javadoc'
 }
 
 task sourcesJar(type: Jar) {
-    from android.sourceSets.main.java.srcDirs
+    from sourceSets.main.allSource
     classifier = 'sources'
 }
 
-artifacts {
-    archives sourcesJar
+publishing {
+    publications {
+        MyPublication(MavenPublication) {
+            from components.java
+            artifact sourcesJar
+            artifact javadocJar
+            groupId project.group
+            artifactId project.name
+            version project.version
+        }
+    }
 }

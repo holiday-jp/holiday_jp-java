@@ -1,6 +1,10 @@
 apply plugin: 'java-library'
 apply plugin: 'kotlin'
 
+group rootProject.ext.group
+version rootProject.ext.version
+description rootProject.ext.version
+
 dependencies {
     compile project(':holidayjp')
     compile "com.google.code.findbugs:jsr305:${rootProject.ext.findbugsVersion}"
@@ -9,3 +13,5 @@ dependencies {
     testCompile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${rootProject.ext.kotlinVersion}"
     testCompile "org.jetbrains.kotlin:kotlin-test:${rootProject.ext.kotlinVersion}"
 }
+
+apply from: "${rootProject.projectDir}/gradle/bintray.gradle"
