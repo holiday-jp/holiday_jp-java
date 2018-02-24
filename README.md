@@ -43,8 +43,10 @@ compile 'com.github.holidayjp:holidayjp-threetenabp:0.1.0'
 ```
 
 ## Example
+### Java 8
 
 ```java
+import java.time.*;
 import com.github.holidayjp.jdk8.HolidayJp;
 
 LocalDate today = LocalDate.now();
@@ -53,6 +55,56 @@ if (HolidayJp.isHoliday(today)) {
 }
 ```
 
+## API
+### `class com.github.holidayjp.HolidayJp`
+This is utility class for Java 7 or earlier.
+
+#### `boolean HolidayJp.isHoliday(@Nonnull Date date)`
+
+Judge whether it is a holiday in Japan. If a date is holiday, return `true`.
+
+```java
+import java.util.*;
+import com.github.holidayjp.HolidayJp;
+
+Date today = new Date();
+if (HolidayJp.isHoliday(today)) {
+    System.out.println("Today is a holiday!");
+}
+```
+
+#### `boolean HolidayJp.isHoliday(int year, int month, int mday)`
+
+Judge whether it is a holiday in Japan. If a date is holiday, return `true`.
+
+```java
+import com.github.holidayjp.HolidayJp;
+
+if (HolidayJp.isHoliday(2018, 12, 1)) {
+    System.out.println("2018/12/01 is a holiday!");
+}
+```
+
+### `class Holiday`
+`Holiday` class represents holiday data.
+
+```java
+import java.util.*;
+import com.github.holidayjp.Holiday;
+import com.github.holidayjp.HolidayJp;
+
+Calendar calendar = Calendar.getInstance();
+calendar.set(2015, 9 - 1, 23);
+Date date = calendar.getTime();
+
+Holiday holiday = HolidayJp.between(date, and: date)[0];
+
+System.out.println(holiday.getYmd());    // "2015-09-23"
+System.out.println(holiday.getWeek());   // "火"
+System.out.println(holiday.getWeekEn()); // "Tuesday"
+System.out.println(holiday.getName())   // "秋分の日"
+System.out.println(holiday.getNameEn()); // "Autumnal Equinox Day"
+```
 
 ## For developer
 ### Development
