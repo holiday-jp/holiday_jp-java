@@ -1,6 +1,6 @@
 # holiday_jp Java
 
-[![Build Status](https://travis-ci.org/pine/holiday_jp-java.svg?branch=master)](https://travis-ci.org/pine/holiday_jp-java)
+[![Build Status](https://travis-ci.org/holiday-jp/holiday_jp-java.svg?branch=master)](https://travis-ci.org/holiday-jp/holiday_jp-java)
 
 :crossed_flags: Japanese holiday for Java
 
