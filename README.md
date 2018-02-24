@@ -102,7 +102,7 @@ Holiday holiday = HolidayJp.between(date, and: date)[0];
 System.out.println(holiday.getYmd());    // "2015-09-23"
 System.out.println(holiday.getWeek());   // "火"
 System.out.println(holiday.getWeekEn()); // "Tuesday"
-System.out.println(holiday.getName())   // "秋分の日"
+System.out.println(holiday.getName());   // "秋分の日"
 System.out.println(holiday.getNameEn()); // "Autumnal Equinox Day"
 ```
 
