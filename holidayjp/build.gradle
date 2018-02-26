@@ -3,7 +3,7 @@ apply plugin: 'kotlin'
 
 group rootProject.ext.group
 version rootProject.ext.version
-description rootProject.ext.version
+description rootProject.ext.description
 
 sourceCompatibility = JavaVersion.VERSION_1_7
 targetCompatibility = JavaVersion.VERSION_1_7
