@@ -186,7 +186,7 @@ if (HolidayJp.isHoliday(today)) {
 }
 ```
 
-### `class com.github.holidayjp.jda.HolidayJp`
+### `class com.github.holidayjp.joda.HolidayJp`
 This is utility class for [Joda-Time](http://www.joda.org/joda-time/).
 
 
