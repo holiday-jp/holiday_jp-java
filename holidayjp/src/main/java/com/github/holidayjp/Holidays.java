@@ -800,11 +800,11 @@ public class Holidays {
         HOLIDAYS.put("2020-05-04", new Holiday("2020-05-04", "月", "Monday", "みどりの日","Greenery Day"));
         HOLIDAYS.put("2020-05-05", new Holiday("2020-05-05", "火", "Tuesday", "こどもの日","Children's Day"));
         HOLIDAYS.put("2020-05-06", new Holiday("2020-05-06", "水", "Wednesday", "こどもの日 振替休日","Holiday in lieu"));
-        HOLIDAYS.put("2020-07-20", new Holiday("2020-07-20", "月", "Monday", "海の日","Marine Day"));
-        HOLIDAYS.put("2020-08-11", new Holiday("2020-08-11", "火", "Tuesday", "山の日","Mountain Day"));
+        HOLIDAYS.put("2020-07-23", new Holiday("2020-07-23", "木", "Thursday", "海の日","Marine Day"));
+        HOLIDAYS.put("2020-07-24", new Holiday("2020-07-24", "金", "Friday", "スポーツの日","Health and Sports Day"));
+        HOLIDAYS.put("2020-08-10", new Holiday("2020-08-10", "月", "Monday", "山の日","Mountain Day"));
         HOLIDAYS.put("2020-09-21", new Holiday("2020-09-21", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2020-09-22", new Holiday("2020-09-22", "火", "Tuesday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2020-10-12", new Holiday("2020-10-12", "月", "Monday", "体育の日","Health and Sports Day"));
         HOLIDAYS.put("2020-11-03", new Holiday("2020-11-03", "火", "Tuesday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2020-11-23", new Holiday("2020-11-23", "月", "Monday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("2021-01-01", new Holiday("2021-01-01", "金", "Friday", "元日","New Year's Day"));
@@ -820,7 +820,7 @@ public class Holidays {
         HOLIDAYS.put("2021-08-11", new Holiday("2021-08-11", "水", "Wednesday", "山の日","Mountain Day"));
         HOLIDAYS.put("2021-09-20", new Holiday("2021-09-20", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2021-09-23", new Holiday("2021-09-23", "木", "Thursday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2021-10-11", new Holiday("2021-10-11", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2021-10-11", new Holiday("2021-10-11", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2021-11-03", new Holiday("2021-11-03", "水", "Wednesday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2021-11-23", new Holiday("2021-11-23", "火", "Tuesday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("2022-01-01", new Holiday("2022-01-01", "土", "Saturday", "元日","New Year's Day"));
@@ -836,7 +836,7 @@ public class Holidays {
         HOLIDAYS.put("2022-08-11", new Holiday("2022-08-11", "木", "Thursday", "山の日","Mountain Day"));
         HOLIDAYS.put("2022-09-19", new Holiday("2022-09-19", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2022-09-23", new Holiday("2022-09-23", "金", "Friday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2022-10-10", new Holiday("2022-10-10", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2022-10-10", new Holiday("2022-10-10", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2022-11-03", new Holiday("2022-11-03", "木", "Thursday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2022-11-23", new Holiday("2022-11-23", "水", "Wednesday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("2023-01-01", new Holiday("2023-01-01", "日", "Sunday", "元日","New Year's Day"));
@@ -853,7 +853,7 @@ public class Holidays {
         HOLIDAYS.put("2023-08-11", new Holiday("2023-08-11", "金", "Friday", "山の日","Mountain Day"));
         HOLIDAYS.put("2023-09-18", new Holiday("2023-09-18", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2023-09-23", new Holiday("2023-09-23", "土", "Saturday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2023-10-09", new Holiday("2023-10-09", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2023-10-09", new Holiday("2023-10-09", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2023-11-03", new Holiday("2023-11-03", "金", "Friday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2023-11-23", new Holiday("2023-11-23", "木", "Thursday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("2024-01-01", new Holiday("2024-01-01", "月", "Monday", "元日","New Year's Day"));
@@ -873,7 +873,7 @@ public class Holidays {
         HOLIDAYS.put("2024-09-16", new Holiday("2024-09-16", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2024-09-22", new Holiday("2024-09-22", "日", "Sunday", "秋分の日","Autumnal Equinox Day"));
         HOLIDAYS.put("2024-09-23", new Holiday("2024-09-23", "月", "Monday", "秋分の日 振替休日","Holiday in lieu"));
-        HOLIDAYS.put("2024-10-14", new Holiday("2024-10-14", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2024-10-14", new Holiday("2024-10-14", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2024-11-03", new Holiday("2024-11-03", "日", "Sunday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2024-11-04", new Holiday("2024-11-04", "月", "Monday", "文化の日 振替休日","Holiday in lieu"));
         HOLIDAYS.put("2024-11-23", new Holiday("2024-11-23", "土", "Saturday", "勤労感謝の日","Labor Thanksgiving Day"));
@@ -892,7 +892,7 @@ public class Holidays {
         HOLIDAYS.put("2025-08-11", new Holiday("2025-08-11", "月", "Monday", "山の日","Mountain Day"));
         HOLIDAYS.put("2025-09-15", new Holiday("2025-09-15", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2025-09-23", new Holiday("2025-09-23", "火", "Tuesday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2025-10-13", new Holiday("2025-10-13", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2025-10-13", new Holiday("2025-10-13", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2025-11-03", new Holiday("2025-11-03", "月", "Monday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2025-11-23", new Holiday("2025-11-23", "日", "Sunday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("2025-11-24", new Holiday("2025-11-24", "月", "Monday", "勤労感謝の日 振替休日","Holiday in lieu"));
@@ -911,7 +911,7 @@ public class Holidays {
         HOLIDAYS.put("2026-09-21", new Holiday("2026-09-21", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2026-09-22", new Holiday("2026-09-22", "火", "Tuesday", "国民の休日","Citizen's Holiday"));
         HOLIDAYS.put("2026-09-23", new Holiday("2026-09-23", "水", "Wednesday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2026-10-12", new Holiday("2026-10-12", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2026-10-12", new Holiday("2026-10-12", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2026-11-03", new Holiday("2026-11-03", "火", "Tuesday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2026-11-23", new Holiday("2026-11-23", "月", "Monday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("2027-01-01", new Holiday("2027-01-01", "金", "Friday", "元日","New Year's Day"));
@@ -928,7 +928,7 @@ public class Holidays {
         HOLIDAYS.put("2027-08-11", new Holiday("2027-08-11", "水", "Wednesday", "山の日","Mountain Day"));
         HOLIDAYS.put("2027-09-20", new Holiday("2027-09-20", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2027-09-23", new Holiday("2027-09-23", "木", "Thursday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2027-10-11", new Holiday("2027-10-11", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2027-10-11", new Holiday("2027-10-11", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2027-11-03", new Holiday("2027-11-03", "水", "Wednesday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2027-11-23", new Holiday("2027-11-23", "火", "Tuesday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("2028-01-01", new Holiday("2028-01-01", "土", "Saturday", "元日","New Year's Day"));
@@ -944,7 +944,7 @@ public class Holidays {
         HOLIDAYS.put("2028-08-11", new Holiday("2028-08-11", "金", "Friday", "山の日","Mountain Day"));
         HOLIDAYS.put("2028-09-18", new Holiday("2028-09-18", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2028-09-22", new Holiday("2028-09-22", "金", "Friday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2028-10-09", new Holiday("2028-10-09", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2028-10-09", new Holiday("2028-10-09", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2028-11-03", new Holiday("2028-11-03", "金", "Friday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2028-11-23", new Holiday("2028-11-23", "木", "Thursday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("2029-01-01", new Holiday("2029-01-01", "月", "Monday", "元日","New Year's Day"));
@@ -963,7 +963,7 @@ public class Holidays {
         HOLIDAYS.put("2029-09-17", new Holiday("2029-09-17", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2029-09-23", new Holiday("2029-09-23", "日", "Sunday", "秋分の日","Autumnal Equinox Day"));
         HOLIDAYS.put("2029-09-24", new Holiday("2029-09-24", "月", "Monday", "秋分の日 振替休日","Holiday in lieu"));
-        HOLIDAYS.put("2029-10-08", new Holiday("2029-10-08", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2029-10-08", new Holiday("2029-10-08", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2029-11-03", new Holiday("2029-11-03", "土", "Saturday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2029-11-23", new Holiday("2029-11-23", "金", "Friday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("2030-01-01", new Holiday("2030-01-01", "火", "Tuesday", "元日","New Year's Day"));
@@ -981,7 +981,7 @@ public class Holidays {
         HOLIDAYS.put("2030-08-12", new Holiday("2030-08-12", "月", "Monday", "山の日 振替休日","Holiday in lieu"));
         HOLIDAYS.put("2030-09-16", new Holiday("2030-09-16", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2030-09-23", new Holiday("2030-09-23", "月", "Monday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2030-10-14", new Holiday("2030-10-14", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2030-10-14", new Holiday("2030-10-14", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2030-11-03", new Holiday("2030-11-03", "日", "Sunday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2030-11-04", new Holiday("2030-11-04", "月", "Monday", "文化の日 振替休日","Holiday in lieu"));
         HOLIDAYS.put("2030-11-23", new Holiday("2030-11-23", "土", "Saturday", "勤労感謝の日","Labor Thanksgiving Day"));
@@ -1000,7 +1000,7 @@ public class Holidays {
         HOLIDAYS.put("2031-08-11", new Holiday("2031-08-11", "月", "Monday", "山の日","Mountain Day"));
         HOLIDAYS.put("2031-09-15", new Holiday("2031-09-15", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2031-09-23", new Holiday("2031-09-23", "火", "Tuesday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2031-10-13", new Holiday("2031-10-13", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2031-10-13", new Holiday("2031-10-13", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2031-11-03", new Holiday("2031-11-03", "月", "Monday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2031-11-23", new Holiday("2031-11-23", "日", "Sunday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("2031-11-24", new Holiday("2031-11-24", "月", "Monday", "勤労感謝の日 振替休日","Holiday in lieu"));
@@ -1018,7 +1018,7 @@ public class Holidays {
         HOLIDAYS.put("2032-09-20", new Holiday("2032-09-20", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2032-09-21", new Holiday("2032-09-21", "火", "Tuesday", "国民の休日","Citizen's Holiday"));
         HOLIDAYS.put("2032-09-22", new Holiday("2032-09-22", "水", "Wednesday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2032-10-11", new Holiday("2032-10-11", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2032-10-11", new Holiday("2032-10-11", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2032-11-03", new Holiday("2032-11-03", "水", "Wednesday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2032-11-23", new Holiday("2032-11-23", "火", "Tuesday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("2033-01-01", new Holiday("2033-01-01", "土", "Saturday", "元日","New Year's Day"));
@@ -1035,7 +1035,7 @@ public class Holidays {
         HOLIDAYS.put("2033-08-11", new Holiday("2033-08-11", "木", "Thursday", "山の日","Mountain Day"));
         HOLIDAYS.put("2033-09-19", new Holiday("2033-09-19", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2033-09-23", new Holiday("2033-09-23", "金", "Friday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2033-10-10", new Holiday("2033-10-10", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2033-10-10", new Holiday("2033-10-10", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2033-11-03", new Holiday("2033-11-03", "木", "Thursday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2033-11-23", new Holiday("2033-11-23", "水", "Wednesday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("2034-01-01", new Holiday("2034-01-01", "日", "Sunday", "元日","New Year's Day"));
@@ -1052,7 +1052,7 @@ public class Holidays {
         HOLIDAYS.put("2034-08-11", new Holiday("2034-08-11", "金", "Friday", "山の日","Mountain Day"));
         HOLIDAYS.put("2034-09-18", new Holiday("2034-09-18", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2034-09-23", new Holiday("2034-09-23", "土", "Saturday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2034-10-09", new Holiday("2034-10-09", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2034-10-09", new Holiday("2034-10-09", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2034-11-03", new Holiday("2034-11-03", "金", "Friday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2034-11-23", new Holiday("2034-11-23", "木", "Thursday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("2035-01-01", new Holiday("2035-01-01", "月", "Monday", "元日","New Year's Day"));
@@ -1071,7 +1071,7 @@ public class Holidays {
         HOLIDAYS.put("2035-09-17", new Holiday("2035-09-17", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2035-09-23", new Holiday("2035-09-23", "日", "Sunday", "秋分の日","Autumnal Equinox Day"));
         HOLIDAYS.put("2035-09-24", new Holiday("2035-09-24", "月", "Monday", "秋分の日 振替休日","Holiday in lieu"));
-        HOLIDAYS.put("2035-10-08", new Holiday("2035-10-08", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2035-10-08", new Holiday("2035-10-08", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2035-11-03", new Holiday("2035-11-03", "土", "Saturday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2035-11-23", new Holiday("2035-11-23", "金", "Friday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("2036-01-01", new Holiday("2036-01-01", "火", "Tuesday", "元日","New Year's Day"));
@@ -1088,7 +1088,7 @@ public class Holidays {
         HOLIDAYS.put("2036-08-11", new Holiday("2036-08-11", "月", "Monday", "山の日","Mountain Day"));
         HOLIDAYS.put("2036-09-15", new Holiday("2036-09-15", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2036-09-22", new Holiday("2036-09-22", "月", "Monday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2036-10-13", new Holiday("2036-10-13", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2036-10-13", new Holiday("2036-10-13", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2036-11-03", new Holiday("2036-11-03", "月", "Monday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2036-11-23", new Holiday("2036-11-23", "日", "Sunday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("2036-11-24", new Holiday("2036-11-24", "月", "Monday", "勤労感謝の日 振替休日","Holiday in lieu"));
@@ -1107,7 +1107,7 @@ public class Holidays {
         HOLIDAYS.put("2037-09-21", new Holiday("2037-09-21", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2037-09-22", new Holiday("2037-09-22", "火", "Tuesday", "国民の休日","Citizen's Holiday"));
         HOLIDAYS.put("2037-09-23", new Holiday("2037-09-23", "水", "Wednesday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2037-10-12", new Holiday("2037-10-12", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2037-10-12", new Holiday("2037-10-12", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2037-11-03", new Holiday("2037-11-03", "火", "Tuesday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2037-11-23", new Holiday("2037-11-23", "月", "Monday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("2038-01-01", new Holiday("2038-01-01", "金", "Friday", "元日","New Year's Day"));
@@ -1123,7 +1123,7 @@ public class Holidays {
         HOLIDAYS.put("2038-08-11", new Holiday("2038-08-11", "水", "Wednesday", "山の日","Mountain Day"));
         HOLIDAYS.put("2038-09-20", new Holiday("2038-09-20", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2038-09-23", new Holiday("2038-09-23", "木", "Thursday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2038-10-11", new Holiday("2038-10-11", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2038-10-11", new Holiday("2038-10-11", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2038-11-03", new Holiday("2038-11-03", "水", "Wednesday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2038-11-23", new Holiday("2038-11-23", "火", "Tuesday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("2039-01-01", new Holiday("2039-01-01", "土", "Saturday", "元日","New Year's Day"));
@@ -1139,7 +1139,7 @@ public class Holidays {
         HOLIDAYS.put("2039-08-11", new Holiday("2039-08-11", "木", "Thursday", "山の日","Mountain Day"));
         HOLIDAYS.put("2039-09-19", new Holiday("2039-09-19", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2039-09-23", new Holiday("2039-09-23", "金", "Friday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2039-10-10", new Holiday("2039-10-10", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2039-10-10", new Holiday("2039-10-10", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2039-11-03", new Holiday("2039-11-03", "木", "Thursday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2039-11-23", new Holiday("2039-11-23", "水", "Wednesday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("2040-01-01", new Holiday("2040-01-01", "日", "Sunday", "元日","New Year's Day"));
@@ -1157,7 +1157,7 @@ public class Holidays {
         HOLIDAYS.put("2040-08-11", new Holiday("2040-08-11", "土", "Saturday", "山の日","Mountain Day"));
         HOLIDAYS.put("2040-09-17", new Holiday("2040-09-17", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2040-09-22", new Holiday("2040-09-22", "土", "Saturday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2040-10-08", new Holiday("2040-10-08", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2040-10-08", new Holiday("2040-10-08", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2040-11-03", new Holiday("2040-11-03", "土", "Saturday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2040-11-23", new Holiday("2040-11-23", "金", "Friday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("2041-01-01", new Holiday("2041-01-01", "火", "Tuesday", "元日","New Year's Day"));
@@ -1175,7 +1175,7 @@ public class Holidays {
         HOLIDAYS.put("2041-08-12", new Holiday("2041-08-12", "月", "Monday", "山の日 振替休日","Holiday in lieu"));
         HOLIDAYS.put("2041-09-16", new Holiday("2041-09-16", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2041-09-23", new Holiday("2041-09-23", "月", "Monday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2041-10-14", new Holiday("2041-10-14", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2041-10-14", new Holiday("2041-10-14", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2041-11-03", new Holiday("2041-11-03", "日", "Sunday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2041-11-04", new Holiday("2041-11-04", "月", "Monday", "文化の日 振替休日","Holiday in lieu"));
         HOLIDAYS.put("2041-11-23", new Holiday("2041-11-23", "土", "Saturday", "勤労感謝の日","Labor Thanksgiving Day"));
@@ -1194,7 +1194,7 @@ public class Holidays {
         HOLIDAYS.put("2042-08-11", new Holiday("2042-08-11", "月", "Monday", "山の日","Mountain Day"));
         HOLIDAYS.put("2042-09-15", new Holiday("2042-09-15", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2042-09-23", new Holiday("2042-09-23", "火", "Tuesday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2042-10-13", new Holiday("2042-10-13", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2042-10-13", new Holiday("2042-10-13", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2042-11-03", new Holiday("2042-11-03", "月", "Monday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2042-11-23", new Holiday("2042-11-23", "日", "Sunday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("2042-11-24", new Holiday("2042-11-24", "月", "Monday", "勤労感謝の日 振替休日","Holiday in lieu"));
@@ -1213,7 +1213,7 @@ public class Holidays {
         HOLIDAYS.put("2043-09-21", new Holiday("2043-09-21", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2043-09-22", new Holiday("2043-09-22", "火", "Tuesday", "国民の休日","Citizen's Holiday"));
         HOLIDAYS.put("2043-09-23", new Holiday("2043-09-23", "水", "Wednesday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2043-10-12", new Holiday("2043-10-12", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2043-10-12", new Holiday("2043-10-12", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2043-11-03", new Holiday("2043-11-03", "火", "Tuesday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2043-11-23", new Holiday("2043-11-23", "月", "Monday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("2044-01-01", new Holiday("2044-01-01", "金", "Friday", "元日","New Year's Day"));
@@ -1230,7 +1230,7 @@ public class Holidays {
         HOLIDAYS.put("2044-08-11", new Holiday("2044-08-11", "木", "Thursday", "山の日","Mountain Day"));
         HOLIDAYS.put("2044-09-19", new Holiday("2044-09-19", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2044-09-22", new Holiday("2044-09-22", "木", "Thursday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2044-10-10", new Holiday("2044-10-10", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2044-10-10", new Holiday("2044-10-10", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2044-11-03", new Holiday("2044-11-03", "木", "Thursday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2044-11-23", new Holiday("2044-11-23", "水", "Wednesday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("2045-01-01", new Holiday("2045-01-01", "日", "Sunday", "元日","New Year's Day"));
@@ -1247,7 +1247,7 @@ public class Holidays {
         HOLIDAYS.put("2045-08-11", new Holiday("2045-08-11", "金", "Friday", "山の日","Mountain Day"));
         HOLIDAYS.put("2045-09-18", new Holiday("2045-09-18", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2045-09-22", new Holiday("2045-09-22", "金", "Friday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2045-10-09", new Holiday("2045-10-09", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2045-10-09", new Holiday("2045-10-09", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2045-11-03", new Holiday("2045-11-03", "金", "Friday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2045-11-23", new Holiday("2045-11-23", "木", "Thursday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("2046-01-01", new Holiday("2046-01-01", "月", "Monday", "元日","New Year's Day"));
@@ -1266,7 +1266,7 @@ public class Holidays {
         HOLIDAYS.put("2046-09-17", new Holiday("2046-09-17", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2046-09-23", new Holiday("2046-09-23", "日", "Sunday", "秋分の日","Autumnal Equinox Day"));
         HOLIDAYS.put("2046-09-24", new Holiday("2046-09-24", "月", "Monday", "秋分の日 振替休日","Holiday in lieu"));
-        HOLIDAYS.put("2046-10-08", new Holiday("2046-10-08", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2046-10-08", new Holiday("2046-10-08", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2046-11-03", new Holiday("2046-11-03", "土", "Saturday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2046-11-23", new Holiday("2046-11-23", "金", "Friday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("2047-01-01", new Holiday("2047-01-01", "火", "Tuesday", "元日","New Year's Day"));
@@ -1284,7 +1284,7 @@ public class Holidays {
         HOLIDAYS.put("2047-08-12", new Holiday("2047-08-12", "月", "Monday", "山の日 振替休日","Holiday in lieu"));
         HOLIDAYS.put("2047-09-16", new Holiday("2047-09-16", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2047-09-23", new Holiday("2047-09-23", "月", "Monday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2047-10-14", new Holiday("2047-10-14", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2047-10-14", new Holiday("2047-10-14", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2047-11-03", new Holiday("2047-11-03", "日", "Sunday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2047-11-04", new Holiday("2047-11-04", "月", "Monday", "文化の日 振替休日","Holiday in lieu"));
         HOLIDAYS.put("2047-11-23", new Holiday("2047-11-23", "土", "Saturday", "勤労感謝の日","Labor Thanksgiving Day"));
@@ -1303,7 +1303,7 @@ public class Holidays {
         HOLIDAYS.put("2048-08-11", new Holiday("2048-08-11", "火", "Tuesday", "山の日","Mountain Day"));
         HOLIDAYS.put("2048-09-21", new Holiday("2048-09-21", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2048-09-22", new Holiday("2048-09-22", "火", "Tuesday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2048-10-12", new Holiday("2048-10-12", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2048-10-12", new Holiday("2048-10-12", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2048-11-03", new Holiday("2048-11-03", "火", "Tuesday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2048-11-23", new Holiday("2048-11-23", "月", "Monday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("2049-01-01", new Holiday("2049-01-01", "金", "Friday", "元日","New Year's Day"));
@@ -1320,7 +1320,7 @@ public class Holidays {
         HOLIDAYS.put("2049-09-20", new Holiday("2049-09-20", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2049-09-21", new Holiday("2049-09-21", "火", "Tuesday", "国民の休日","Citizen's Holiday"));
         HOLIDAYS.put("2049-09-22", new Holiday("2049-09-22", "水", "Wednesday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2049-10-11", new Holiday("2049-10-11", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2049-10-11", new Holiday("2049-10-11", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2049-11-03", new Holiday("2049-11-03", "水", "Wednesday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2049-11-23", new Holiday("2049-11-23", "火", "Tuesday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("2050-01-01", new Holiday("2050-01-01", "土", "Saturday", "元日","New Year's Day"));
@@ -1337,7 +1337,7 @@ public class Holidays {
         HOLIDAYS.put("2050-08-11", new Holiday("2050-08-11", "木", "Thursday", "山の日","Mountain Day"));
         HOLIDAYS.put("2050-09-19", new Holiday("2050-09-19", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2050-09-23", new Holiday("2050-09-23", "金", "Friday", "秋分の日","Autumnal Equinox Day"));
-        HOLIDAYS.put("2050-10-10", new Holiday("2050-10-10", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2050-10-10", new Holiday("2050-10-10", "月", "Monday", "スポーツの日","Health and Sports Day"));
         HOLIDAYS.put("2050-11-03", new Holiday("2050-11-03", "木", "Thursday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2050-11-23", new Holiday("2050-11-23", "水", "Wednesday", "勤労感謝の日","Labor Thanksgiving Day"));
     }
