@@ -27,8 +27,13 @@ class HolidayJpTest {
         assertFalse(HolidayJp.isHoliday(date3))
 
         (2016..2050).forEach { i ->
+            if (i == 2020) { // Tokyo Olympic
+                val date4 = LocalDate(i, 8, 10)
+                assertTrue(HolidayJp.isHoliday(date4))
+            } else {
                 val date4 = LocalDate(i, 8, 11)
-            assertTrue(HolidayJp.isHoliday(date4))
+                assertTrue(HolidayJp.isHoliday(date4))
+            }
         }
     }
 
