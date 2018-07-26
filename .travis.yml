@@ -17,7 +17,8 @@ android:
     - sys-img-armeabi-v7a-android-22
 
 before_script:
-  - if [ "$TRAVIS_JDK_VERSION" = "oraclejdk8" ]; then
+  - |
+    if [ "$TRAVIS_JDK_VERSION" = "oraclejdk8" ]; then
       mkdir -p $ANDROID_HOME/licenses
       echo 8933bad161af4178b1185d1a37fbf41ea5269c55 >> $ANDROID_HOME/licenses/android-sdk-license
       echo d56f5187479451eabf01fb78af6dfcb131a6481e >> $ANDROID_HOME/licenses/android-sdk-license
@@ -25,8 +26,7 @@ before_script:
       emulator -avd test -no-audio -no-window &
       android-wait-for-emulator
       adb shell input keyevent 82 &
-    fi
-  - if [ "$TRAVIS_JDK_VERSION" != "oraclejdk8" ]; then
+    else
       rm "$JAVA_HOME/lib/security/cacerts"
       ln -s /etc/ssl/certs/java/cacerts "$JAVA_HOME/lib/security/cacerts"
     fi
