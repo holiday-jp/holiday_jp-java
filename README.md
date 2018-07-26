@@ -27,7 +27,7 @@
   - [Publish to jcenter](#publish-to-jcenter)
 - [See also](#see-also)
 - [License](#license)
-      
+
 ## Requirements
 
 - Java 7 or later
@@ -88,6 +88,19 @@ import com.github.holidayjp.jdk8.HolidayJp;
 LocalDate today = LocalDate.now();
 if (HolidayJp.isHoliday(today)) {
     System.out.println("Today is a holiday!");
+}
+```
+
+### ThreeTenABP + Kotlin
+The library is compatible with Android (>= API level 15).
+
+```kotlin
+import org.threeten.bp.*
+import com.github.holidayjp.threetenabp.HolidayJp
+
+val today = LocalDate.now()
+if (HolidayJp.isHoliday(today)) {
+    println("Today is a holiday!")
 }
 ```
 
