@@ -41,7 +41,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.github.holidayjp:holidayjp:0.1.0'
+    compile 'com.github.holidayjp:holidayjp:2.0.0'
 }
 ```
 
@@ -50,21 +50,21 @@ dependencies {
 `LocalDate`, `LocalDateTime`, `ZonedDateTime` and `OffsetDateTime` classes are supported.
 
 ```groovy
-compile 'com.github.holidayjp:holidayjp-jdk8:0.1.0'
+compile 'com.github.holidayjp:holidayjp-jdk8:2.0.0'
 ```
 
 ### [Joda-Time](http://www.joda.org/joda-time/)
 `LocalDate`, `LocalDateTime` and `DateTime` classes are supported.
 
 ```groovy
-compile 'com.github.holidayjp:holidayjp-joda:0.1.0'
+compile 'com.github.holidayjp:holidayjp-joda:2.0.0'
 ```
 
 ### [ThreeTenABP](https://github.com/JakeWharton/ThreeTenABP)
 ThreeTenABP is polyfill of Java 8 Date and Time API for Android. `LocalDate`, `LocalDateTime`, `ZonedDateTime` and `OffsetDateTime` classes are supported.
 
 ```groovy
-implementation 'com.github.holidayjp:holidayjp-threetenabp:0.1.0'
+implementation 'com.github.holidayjp:holidayjp-threetenabp:2.0.0'
 ```
 
 ## Example
