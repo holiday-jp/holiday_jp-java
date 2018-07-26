@@ -1,6 +1,8 @@
 language: android
 jdk:
   - oraclejdk8
+  - openjdk10
+  - openjdk11
 env:
   global:
     - GRADLE_OPTS="-Xmx1024m"
