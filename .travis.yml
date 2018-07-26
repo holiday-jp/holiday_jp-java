@@ -1,12 +1,9 @@
 language: android
 jdk:
   - oraclejdk8
-addons:
-  apt:
-    packages:
-      - lynx
 env:
-  - GRADLE_OPTS="-Xmx512m -XX:MaxPermSize=512m"
+  global:
+    - GRADLE_OPTS="-Xmx1024m"
 
 android:
   components:
