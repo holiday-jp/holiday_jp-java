@@ -12,7 +12,7 @@ buildscript {
 
         // Library version
         findbugsVersion = '3.0.2'
-        kotlinVersion = '1.2.21'
+        kotlinVersion = '1.2.51'
         junitVersion = '4.12'
 
         // Android build configuration
