@@ -15,7 +15,7 @@
 - [Example](#example)
   - [Java 7](#java-7)
   - [Java 8](#java-8)
-  - [ThreeTenABP + Kotlin](##threetenabp--kotlin)
+  - [ThreeTenABP + Kotlin](#threetenabp--kotlin)
 - [References](#references)
   - [class com.github.holidayjp.HolidayJp](#class-comgithubholidayjpholidayjp)
   - [class com.github.holidayjp.Holiday](#class-comgithubholidayjpholiday)
