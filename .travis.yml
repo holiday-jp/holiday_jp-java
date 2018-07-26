@@ -25,7 +25,8 @@ before_script:
       emulator -avd test -no-audio -no-window &
       android-wait-for-emulator
       adb shell input keyevent 82 &
-    else
+    fi
+  - if [ "$TRAVIS_JDK_VERSION" != "oraclejdk8" ]; then
       rm "$JAVA_HOME/lib/security/cacerts"
       ln -s /etc/ssl/certs/java/cacerts "$JAVA_HOME/lib/security/cacerts"
     fi
