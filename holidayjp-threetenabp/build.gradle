@@ -23,11 +23,11 @@ android {
 dependencies {
     api project(':holidayjp')
     api "com.google.code.findbugs:jsr305:${rootProject.ext.findbugsVersion}"
-    api 'com.jakewharton.threetenabp:threetenabp:1.0.5'
+    api 'com.jakewharton.threetenabp:threetenabp:1.1.0'
     androidTestImplementation "junit:junit:${rootProject.ext.junitVersion}"
     androidTestImplementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${rootProject.ext.kotlinVersion}"
     androidTestImplementation "org.jetbrains.kotlin:kotlin-test:${rootProject.ext.kotlinVersion}"
-    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
 
 }
 
