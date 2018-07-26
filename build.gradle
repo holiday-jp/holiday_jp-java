@@ -59,6 +59,18 @@ task generate {
     }
 }
 
+// Define gradle `isGitDirty` custom task
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+import com.github.holidayjp.buildscript.GitDirtyCheckerTask
+
+task isGitDirty {
+    group 'HolidayJp'
+    description 'Check if git status is dirty'
+    doLast {
+        GitDirtyCheckerTask.run()
+    }
+}
+
 // Build Time Tracker task
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 apply plugin: 'build-time-tracker'

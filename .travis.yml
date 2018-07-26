@@ -27,5 +27,7 @@ before_script:
   - adb shell input keyevent 82 &
 
 script:
-  - ./gradlew generate
-  - ./gradlew clean check connectedCheck
+  - travis_retry ./gradlew clean
+  - travis_retry ./gradlew generate isGitDirty
+  - travis_retry ./gradlew check
+  - travis_retry ./gradlew connectedCheck
