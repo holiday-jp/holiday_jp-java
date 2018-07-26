@@ -31,4 +31,6 @@ script:
   - travis_retry ./gradlew clean
   - travis_retry ./gradlew generate isGitDirty
   - travis_retry ./gradlew check
-  - travis_retry ./gradlew connectedCheck
+  - if [ "$TRAVIS_JDK_VERSION" = "oraclejdk8" ]; then
+      travis_retry ./gradlew connectedCheck
+    fi
