@@ -302,7 +302,7 @@ public class Holidays {
         HOLIDAYS.put("1990-09-24", new Holiday("1990-09-24", "月", "Monday", "秋分の日 振替休日","Holiday in lieu"));
         HOLIDAYS.put("1990-10-10", new Holiday("1990-10-10", "水", "Wednesday", "体育の日","Health and Sports Day"));
         HOLIDAYS.put("1990-11-03", new Holiday("1990-11-03", "土", "Saturday", "文化の日","National Culture Day"));
-        HOLIDAYS.put("1990-11-12", new Holiday("1990-11-12", "月", "Monday", "即位礼正殿の儀","The Ceremony of the Enthronement of His Majesty th Emperor (at the Seiden)"));
+        HOLIDAYS.put("1990-11-12", new Holiday("1990-11-12", "月", "Monday", "即位礼正殿の儀","The Ceremony of the Enthronement of His Majesty the Emperor (at the Seiden)"));
         HOLIDAYS.put("1990-11-23", new Holiday("1990-11-23", "金", "Friday", "勤労感謝の日","Labor Thanksgiving Day"));
         HOLIDAYS.put("1990-12-23", new Holiday("1990-12-23", "日", "Sunday", "天皇誕生日","Emperor's Birthday"));
         HOLIDAYS.put("1990-12-24", new Holiday("1990-12-24", "月", "Monday", "天皇誕生日 振替休日","Holiday in lieu"));
@@ -776,6 +776,9 @@ public class Holidays {
         HOLIDAYS.put("2019-02-11", new Holiday("2019-02-11", "月", "Monday", "建国記念の日","National Foundation Day"));
         HOLIDAYS.put("2019-03-21", new Holiday("2019-03-21", "木", "Thursday", "春分の日","Vernal Equinox Day"));
         HOLIDAYS.put("2019-04-29", new Holiday("2019-04-29", "月", "Monday", "昭和の日","Showa Day"));
+        HOLIDAYS.put("2019-04-30", new Holiday("2019-04-30", "火", "Tuesday", "休日","Holiday"));
+        HOLIDAYS.put("2019-05-01", new Holiday("2019-05-01", "水", "Wednesday", "休日（祝日扱い）","Holiday"));
+        HOLIDAYS.put("2019-05-02", new Holiday("2019-05-02", "木", "Thursday", "休日","Holiday"));
         HOLIDAYS.put("2019-05-03", new Holiday("2019-05-03", "金", "Friday", "憲法記念日","Constitution Memorial Day"));
         HOLIDAYS.put("2019-05-04", new Holiday("2019-05-04", "土", "Saturday", "みどりの日","Greenery Day"));
         HOLIDAYS.put("2019-05-05", new Holiday("2019-05-05", "日", "Sunday", "こどもの日","Children's Day"));
@@ -786,6 +789,7 @@ public class Holidays {
         HOLIDAYS.put("2019-09-16", new Holiday("2019-09-16", "月", "Monday", "敬老の日","Respect for the Aged Day"));
         HOLIDAYS.put("2019-09-23", new Holiday("2019-09-23", "月", "Monday", "秋分の日","Autumnal Equinox Day"));
         HOLIDAYS.put("2019-10-14", new Holiday("2019-10-14", "月", "Monday", "体育の日","Health and Sports Day"));
+        HOLIDAYS.put("2019-10-22", new Holiday("2019-10-22", "火", "Tuesday", "休日（祝日扱い）","Holiday"));
         HOLIDAYS.put("2019-11-03", new Holiday("2019-11-03", "日", "Sunday", "文化の日","National Culture Day"));
         HOLIDAYS.put("2019-11-04", new Holiday("2019-11-04", "月", "Monday", "文化の日 振替休日","Holiday in lieu"));
         HOLIDAYS.put("2019-11-23", new Holiday("2019-11-23", "土", "Saturday", "勤労感謝の日","Labor Thanksgiving Day"));
