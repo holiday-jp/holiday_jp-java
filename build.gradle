@@ -3,7 +3,7 @@
 buildscript {
     ext {
         // Project information
-        version = '2.0.0'
+        version = '2.0.1'
         description = 'Japanese holiday.'
         group = 'com.github.holidayjp'
         siteUrl = 'https://github.com/holiday-jp/holiday_jp-java'
